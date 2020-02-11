@@ -50,6 +50,10 @@ func (pk TestBogusPublicKey) Raw() ([]byte, error) {
 	return pk, nil
 }
 
+func (pk TestBogusPublicKey) RawFull() ([]byte, error) {
+	return pk, nil
+}
+
 // Type returns the protobof key type.
 func (pk TestBogusPublicKey) Type() pb.KeyType {
 	return pb.KeyType_RSA
